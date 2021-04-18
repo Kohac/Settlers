@@ -469,7 +469,7 @@ function displayModal(el, elId) {
     const modal = document.getElementById(elId);
     modal.style.display = "block";
     const imgId = document.getElementById("modal-img");
-    imgId.src = el.src;
+    imgId.src = el.src; 
 }
 function closeModal(elId) {
     const modal = document.getElementById(elId);
