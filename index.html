@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="./scriptForApi.js"></script>
+</head>
+<body>
+    <section class="header">
+        <div class="container flex">
+            <h1 class="xl title">Adventure name</h1>
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#">List of adventures</a></li>
+                    <li><a href="#">Reset adventure</a></li>
+                    <li><a href="#">Generals and Skills</a></li>
+                    <li><a href="#">Read me</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Adventure detail table -->
+    <section class="adventure">
+        <h3 class="l b text-center">Adventure detail</h3>
+        <div id="adventure-detail">
+            <table id="adventure-table">
+            </table>
+        </div>
+    </section>
+    <!-- Adventure sectors -->
+    <section class="sectors">
+        <h3 class="l text-center">Sectors</h3>
+        <div id="sectors" class="container grid">
+            <!-- <div class="imgs grid">
+                <img onclick="displayModal(this,'modal')" src="sector-1-1.png" alt="">
+                <img onclick="displayModal(this,'modal')" src="sector-1-2.png" alt="">
+            </div> -->
+        </div>
+    </section>
+    <!-- <section class="modal"> -->
+        <div id="modal">
+            <div class="modal-content">
+                <img id="modal-img">
+            </div>
+            <span onclick="closeModal('modal')" class="close">&times;</span>
+        </div>
+    <!-- </section> -->
+</body>
+</html>
