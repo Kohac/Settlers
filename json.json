@@ -1,0 +1,1260 @@
+[
+    {
+      "Id": 1,
+      "Name": "People of Mountain",
+      "General": "6x MMA, 2x VET, 7x FAST, OLDER or MAJOR, (OLDER BOSS), BORIS (+1), NUSALA, VARGUS, 6x REGULAR, YOUNGER or 4x MMA + ANSLEM, STEADFAST or FAST",
+      "Army": "100 REC, 900 BOW, 11 C, 550 (650) MS, 1 500 (1900) K, 300 (900) MM, 250 (400) B",
+      "Resources": "BIG CAT, ASSASSIN (+2x), OBSIDIAN HORSESHOES, FREE PROVISION HOUSE, 15 000 HARDWOOD PLANKS, 20 000 TOOLS, 10 000 STEEL, 2 000 BATTLEHORSE, 1 000 PLATINUM SWORD, 500 FLINTLOCK, 1 000 TITANIUM, 1 250 SALTPETER, 1 250 MAHOGANY WOOD, 80 000 WHEAT, 500 BEANS, 500 HERBS, 100 000 BREW, 10 000 COIN, 8 500 ADVANCED PAPER, 22 500 SAUSAGES, 12 000 DUFFLE, 2 000 CARRIAGE, 30 000 PINEWOOD PLANKS, 20 000 PLATINUM",
+      "Time": "1900-01-01T01:15:00",
+      "AdventureTypeId": 3,
+      "AdventureThemeId": 2,
+      "Player": "1",
+      "Difficulty": 13,
+      "Note": "At start of adventure: use Obsidian horseshoes. Create Emergency repair kit, Armory, Transmutation reagents, Wheat field fertilizer, Headquarters, Provision house",
+      "Sectors": [
+        {
+          "Id": 1,
+          "AdventureId": 1,
+          "OrderId": 1,
+          "Name": "Sector 1",
+          "StartNote": null,
+          "EndNote": null,
+          "Camps": [
+            {
+              "Id": 1,
+              "SectorId": 1,
+              "OrderId": 1,
+              "Name": "CAMP 1",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 1,
+                  "CampId": 1,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 1,
+                      "AttackId": 1,
+                      "OrderId": 1,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "10 MS, 185 K",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                },
+                {
+                  "Id": 24,
+                  "CampId": 1,
+                  "AttackTypeId": 2,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 49,
+                      "AttackId": 24,
+                      "OrderId": 1,
+                      "GeneralName": "SKIP - use ASSASIN on CAMP 2",
+                      "NumberOfUnits": "",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": 2,
+              "SectorId": 1,
+              "OrderId": 2,
+              "Name": "CAMP 2",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 2,
+                  "CampId": 2,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 2,
+                      "AttackId": 2,
+                      "OrderId": 1,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "195 K",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                },
+                {
+                  "Id": 25,
+                  "CampId": 2,
+                  "AttackTypeId": 2,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 50,
+                      "AttackId": 25,
+                      "OrderId": 1,
+                      "GeneralName": "ASSASSIN",
+                      "NumberOfUnits": "",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": 3,
+              "SectorId": 1,
+              "OrderId": 3,
+              "Name": "CAMP 3  - BLOCK",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 3,
+                  "CampId": 3,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 3,
+                      "AttackId": 3,
+                      "OrderId": 1,
+                      "GeneralName": "REGULAR",
+                      "NumberOfUnits": "1 R",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 4,
+                      "AttackId": 3,
+                      "OrderId": 2,
+                      "GeneralName": "REGULAR",
+                      "NumberOfUnits": "1 R",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 5,
+                      "AttackId": 3,
+                      "OrderId": 3,
+                      "GeneralName": "REGULAR",
+                      "NumberOfUnits": "1 R",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 6,
+                      "AttackId": 3,
+                      "OrderId": 4,
+                      "GeneralName": "FAST",
+                      "NumberOfUnits": "1 R",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": 4,
+              "SectorId": 1,
+              "OrderId": 4,
+              "Name": "CAMP 4",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 4,
+                  "CampId": 4,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 7,
+                      "AttackId": 4,
+                      "OrderId": 1,
+                      "GeneralName": "VET",
+                      "NumberOfUnits": "100 BOW",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 8,
+                      "AttackId": 4,
+                      "OrderId": 2,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "195 MM",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": 2,
+          "AdventureId": 1,
+          "OrderId": 2,
+          "Name": "Sector 2",
+          "StartNote": "Before you start this sector: Select town hall",
+          "EndNote": null,
+          "Camps": [
+            {
+              "Id": 5,
+              "SectorId": 2,
+              "OrderId": 1,
+              "Name": "CAMP 5",
+              "Note": "After camp is destroyed, apply emergency repair kit on it",
+              "Attacks": [
+                {
+                  "Id": 5,
+                  "CampId": 5,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 9,
+                      "AttackId": 5,
+                      "OrderId": 1,
+                      "GeneralName": "VARGUS",
+                      "NumberOfUnits": "75 MS, 120 B",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": 3,
+          "AdventureId": 1,
+          "OrderId": 3,
+          "Name": "Sector 3",
+          "StartNote": null,
+          "EndNote": null,
+          "Camps": [
+            {
+              "Id": 6,
+              "SectorId": 3,
+              "OrderId": 1,
+              "Name": "CAMP 6",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 6,
+                  "CampId": 6,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 10,
+                      "AttackId": 6,
+                      "OrderId": 1,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "195 K",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": 7,
+              "SectorId": 3,
+              "OrderId": 2,
+              "Name": "CAMP 7",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 7,
+                  "CampId": 7,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 11,
+                      "AttackId": 7,
+                      "OrderId": 1,
+                      "GeneralName": "OLDER (can be BOSS)",
+                      "NumberOfUnits": "65 MS, 93 K, 137 B",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                },
+                {
+                  "Id": 30,
+                  "CampId": 7,
+                  "AttackTypeId": 2,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 54,
+                      "AttackId": 30,
+                      "OrderId": 1,
+                      "GeneralName": "NUSALSA",
+                      "NumberOfUnits": "1 C",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 55,
+                      "AttackId": 30,
+                      "OrderId": 2,
+                      "GeneralName": "MAJOR",
+                      "NumberOfUnits": "68 MS, 75 K, 142 B",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": 8,
+              "SectorId": 3,
+              "OrderId": 3,
+              "Name": "CAMP 8",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 8,
+                  "CampId": 8,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": "!! SEND GENERALS IN ORDER MARKED IN THE PICTURE",
+                  "Waves": [
+                    {
+                      "Id": 12,
+                      "AttackId": 8,
+                      "OrderId": 1,
+                      "GeneralName": "REGULAR",
+                      "NumberOfUnits": "1 R",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 13,
+                      "AttackId": 8,
+                      "OrderId": 2,
+                      "GeneralName": "REGULAR",
+                      "NumberOfUnits": "1 R",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 14,
+                      "AttackId": 8,
+                      "OrderId": 3,
+                      "GeneralName": "REGULAR",
+                      "NumberOfUnits": "1 R",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 15,
+                      "AttackId": 8,
+                      "OrderId": 4,
+                      "GeneralName": "FAST",
+                      "NumberOfUnits": "1 R",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": 9,
+              "SectorId": 3,
+              "OrderId": 4,
+              "Name": "CAMP 9",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 9,
+                  "CampId": 9,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 16,
+                      "AttackId": 9,
+                      "OrderId": 1,
+                      "GeneralName": "OLDER",
+                      "NumberOfUnits": "50 MS, 141 K, 104 B",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                },
+                {
+                  "Id": 32,
+                  "CampId": 9,
+                  "AttackTypeId": 2,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 56,
+                      "AttackId": 32,
+                      "OrderId": 1,
+                      "GeneralName": "MAJOR",
+                      "NumberOfUnits": "54 MS, 123 K, 108 B",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": 4,
+          "AdventureId": 1,
+          "OrderId": 4,
+          "Name": "Sector 4",
+          "StartNote": "Before you start this sector: Create Gate reinforcement kit and close LEFT gate!!",
+          "EndNote": null,
+          "Camps": [
+            {
+              "Id": 10,
+              "SectorId": 4,
+              "OrderId": 1,
+              "Name": "CAMP 10",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 10,
+                  "CampId": 10,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 17,
+                      "AttackId": 10,
+                      "OrderId": 1,
+                      "GeneralName": "BIG CATAPULT",
+                      "NumberOfUnits": "",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": 11,
+              "SectorId": 4,
+              "OrderId": 2,
+              "Name": "CAMP 11",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 11,
+                  "CampId": 11,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 18,
+                      "AttackId": 11,
+                      "OrderId": 1,
+                      "GeneralName": "STEADFAST",
+                      "NumberOfUnits": "115 K",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 19,
+                      "AttackId": 11,
+                      "OrderId": 2,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "16 MS, 179 MM",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                },
+                {
+                  "Id": 34,
+                  "CampId": 11,
+                  "AttackTypeId": 2,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 57,
+                      "AttackId": 34,
+                      "OrderId": 1,
+                      "GeneralName": "ASSASSIN",
+                      "NumberOfUnits": "",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 58,
+                      "AttackId": 34,
+                      "OrderId": 2,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "16 MS, 179 MM",
+                      "Highlight": false,
+                      "Note": "IF EAGLE KILLED:"
+                    },
+                    {
+                      "Id": 59,
+                      "AttackId": 34,
+                      "OrderId": 3,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "195 K",
+                      "Highlight": false,
+                      "Note": "IF BEAR KILLED:"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": 12,
+              "SectorId": 4,
+              "OrderId": 3,
+              "Name": "CAMP 12",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 12,
+                  "CampId": 12,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 20,
+                      "AttackId": 12,
+                      "OrderId": 1,
+                      "GeneralName": "VET",
+                      "NumberOfUnits": "105 K",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 21,
+                      "AttackId": 12,
+                      "OrderId": 2,
+                      "GeneralName": "VARGUS",
+                      "NumberOfUnits": "76 MS, 73 MM, 46 B",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": 5,
+          "AdventureId": 1,
+          "OrderId": 5,
+          "Name": "Sector 5",
+          "StartNote": null,
+          "EndNote": null,
+          "Camps": [
+            {
+              "Id": 13,
+              "SectorId": 5,
+              "OrderId": 1,
+              "Name": "CAMP 13",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 13,
+                  "CampId": 13,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 22,
+                      "AttackId": 13,
+                      "OrderId": 1,
+                      "GeneralName": "VET",
+                      "NumberOfUnits": "80 BOW",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 23,
+                      "AttackId": 13,
+                      "OrderId": 2,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "195 MM",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": 14,
+              "SectorId": 5,
+              "OrderId": 2,
+              "Name": "CAMP 14",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 14,
+                  "CampId": 14,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 24,
+                      "AttackId": 14,
+                      "OrderId": 1,
+                      "GeneralName": "NUSALA",
+                      "NumberOfUnits": "1 C",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 25,
+                      "AttackId": 14,
+                      "OrderId": 2,
+                      "GeneralName": "YOUNGER",
+                      "NumberOfUnits": "95 REC",
+                      "Highlight": true,
+                      "Note": null
+                    },
+                    {
+                      "Id": 26,
+                      "AttackId": 14,
+                      "OrderId": 3,
+                      "GeneralName": "VET",
+                      "NumberOfUnits": "100 BOW",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 27,
+                      "AttackId": 14,
+                      "OrderId": 4,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "195 MM",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                },
+                {
+                  "Id": 37,
+                  "CampId": 14,
+                  "AttackTypeId": 2,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 60,
+                      "AttackId": 37,
+                      "OrderId": 1,
+                      "GeneralName": "10x MMA",
+                      "NumberOfUnits": "1 C",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 61,
+                      "AttackId": 37,
+                      "OrderId": 2,
+                      "GeneralName": "VET",
+                      "NumberOfUnits": "100 BOW",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 62,
+                      "AttackId": 37,
+                      "OrderId": 3,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "195 MM",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": 6,
+          "AdventureId": 1,
+          "OrderId": 6,
+          "Name": "Sector 6",
+          "StartNote": "Before you start this sector: BUILD Armory!!",
+          "EndNote": null,
+          "Camps": [
+            {
+              "Id": 15,
+              "SectorId": 6,
+              "OrderId": 1,
+              "Name": "CAMP 15",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 15,
+                  "CampId": 15,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 28,
+                      "AttackId": 15,
+                      "OrderId": 1,
+                      "GeneralName": "STEADFAST",
+                      "NumberOfUnits": "226 K",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 29,
+                      "AttackId": 15,
+                      "OrderId": 2,
+                      "GeneralName": "VARGUS",
+                      "NumberOfUnits": "80 MS, 115 B",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                },
+                {
+                  "Id": 38,
+                  "CampId": 15,
+                  "AttackTypeId": 2,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 63,
+                      "AttackId": 38,
+                      "OrderId": 1,
+                      "GeneralName": "ASSASSIN",
+                      "NumberOfUnits": "",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 64,
+                      "AttackId": 38,
+                      "OrderId": 2,
+                      "GeneralName": "VET",
+                      "NumberOfUnits": "198 K",
+                      "Highlight": false,
+                      "Note": "IF BEARS KILLED:"
+                    },
+                    {
+                      "Id": 65,
+                      "AttackId": 38,
+                      "OrderId": 3,
+                      "GeneralName": "VARGUS",
+                      "NumberOfUnits": "34 MS, 161 B",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 66,
+                      "AttackId": 38,
+                      "OrderId": 4,
+                      "GeneralName": "VET",
+                      "NumberOfUnits": "70 K",
+                      "Highlight": false,
+                      "Note": "IF EAGLE KILLED:"
+                    },
+                    {
+                      "Id": 67,
+                      "AttackId": 38,
+                      "OrderId": 5,
+                      "GeneralName": "VARGUS",
+                      "NumberOfUnits": "80 MS, 115 B",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 68,
+                      "AttackId": 38,
+                      "OrderId": 6,
+                      "GeneralName": "VET",
+                      "NumberOfUnits": "162 K",
+                      "Highlight": false,
+                      "Note": "IF IBEX KILLED:"
+                    },
+                    {
+                      "Id": 69,
+                      "AttackId": 38,
+                      "OrderId": 7,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "195 K",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": 16,
+              "SectorId": 6,
+              "OrderId": 2,
+              "Name": "CAMP 16",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 16,
+                  "CampId": 16,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 30,
+                      "AttackId": 16,
+                      "OrderId": 1,
+                      "GeneralName": "OLDER",
+                      "NumberOfUnits": "54 MS, 123 K, 118 B",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                },
+                {
+                  "Id": 39,
+                  "CampId": 16,
+                  "AttackTypeId": 2,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 70,
+                      "AttackId": 39,
+                      "OrderId": 1,
+                      "GeneralName": "MAJOR",
+                      "NumberOfUnits": "57 MS, 110 K, 118 B",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": 17,
+              "SectorId": 6,
+              "OrderId": 3,
+              "Name": "CAMP 17",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 17,
+                  "CampId": 17,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 31,
+                      "AttackId": 17,
+                      "OrderId": 1,
+                      "GeneralName": "NUSALA",
+                      "NumberOfUnits": "1 MM",
+                      "Highlight": true,
+                      "Note": null
+                    },
+                    {
+                      "Id": 32,
+                      "AttackId": 17,
+                      "OrderId": 2,
+                      "GeneralName": "VARGUS",
+                      "NumberOfUnits": "90 MS, 105 B",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": 7,
+          "AdventureId": 1,
+          "OrderId": 7,
+          "Name": "Sector 7",
+          "StartNote": null,
+          "EndNote": null,
+          "Camps": [
+            {
+              "Id": 18,
+              "SectorId": 7,
+              "OrderId": 1,
+              "Name": "CAMP 18",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 18,
+                  "CampId": 18,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 33,
+                      "AttackId": 18,
+                      "OrderId": 1,
+                      "GeneralName": "ASSASSIN",
+                      "NumberOfUnits": "",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 34,
+                      "AttackId": 18,
+                      "OrderId": 2,
+                      "GeneralName": "VET",
+                      "NumberOfUnits": "231 K",
+                      "Highlight": false,
+                      "Note": "IF IBEX KILLED:"
+                    },
+                    {
+                      "Id": 35,
+                      "AttackId": 18,
+                      "OrderId": 3,
+                      "GeneralName": "VARGUS",
+                      "NumberOfUnits": "46 MS, 77 MM, 72 B",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 36,
+                      "AttackId": 18,
+                      "OrderId": 4,
+                      "GeneralName": "VET",
+                      "NumberOfUnits": "214 K",
+                      "Highlight": false,
+                      "Note": "IF BEAR KILLED:"
+                    },
+                    {
+                      "Id": 37,
+                      "AttackId": 18,
+                      "OrderId": 5,
+                      "GeneralName": "VARGUS",
+                      "NumberOfUnits": "46 MS, 77 MM, 72 B",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 38,
+                      "AttackId": 18,
+                      "OrderId": 6,
+                      "GeneralName": "VET",
+                      "NumberOfUnits": "215 BOW",
+                      "Highlight": false,
+                      "Note": "IF WOLF KILLED:"
+                    },
+                    {
+                      "Id": 39,
+                      "AttackId": 18,
+                      "OrderId": 7,
+                      "GeneralName": "VET",
+                      "NumberOfUnits": "215 BOW",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 40,
+                      "AttackId": 18,
+                      "OrderId": 8,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "195 MM",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": 8,
+          "AdventureId": 1,
+          "OrderId": 8,
+          "Name": "Sector 8",
+          "StartNote": null,
+          "EndNote": null,
+          "Camps": [
+            {
+              "Id": 19,
+              "SectorId": 8,
+              "OrderId": 1,
+              "Name": "CAMP 19",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 19,
+                  "CampId": 19,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 41,
+                      "AttackId": 19,
+                      "OrderId": 1,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "195 K",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": 20,
+              "SectorId": 8,
+              "OrderId": 2,
+              "Name": "CAMP 20",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 20,
+                  "CampId": 20,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 42,
+                      "AttackId": 20,
+                      "OrderId": 1,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "195 K",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": 9,
+          "AdventureId": 1,
+          "OrderId": 9,
+          "Name": "Sector 9",
+          "StartNote": null,
+          "EndNote": null,
+          "Camps": [
+            {
+              "Id": 21,
+              "SectorId": 9,
+              "OrderId": 1,
+              "Name": "CAMP 21",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 21,
+                  "CampId": 21,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 43,
+                      "AttackId": 21,
+                      "OrderId": 1,
+                      "GeneralName": "VET",
+                      "NumberOfUnits": "220 BOW",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 44,
+                      "AttackId": 21,
+                      "OrderId": 2,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "195 MM",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "Id": 22,
+              "SectorId": 9,
+              "OrderId": 2,
+              "Name": "CAMP 22",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 22,
+                  "CampId": 22,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 45,
+                      "AttackId": 22,
+                      "OrderId": 1,
+                      "GeneralName": "10x MMA",
+                      "NumberOfUnits": "1 C",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 46,
+                      "AttackId": 22,
+                      "OrderId": 2,
+                      "GeneralName": "OLDER",
+                      "NumberOfUnits": "68 MS, 227 B",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                },
+                {
+                  "Id": 45,
+                  "CampId": 22,
+                  "AttackTypeId": 2,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 71,
+                      "AttackId": 45,
+                      "OrderId": 1,
+                      "GeneralName": "STEADFAST",
+                      "NumberOfUnits": "56 K",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 72,
+                      "AttackId": 45,
+                      "OrderId": 2,
+                      "GeneralName": "MAJOR",
+                      "NumberOfUnits": "68 MS, 217 B",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": 10,
+          "AdventureId": 1,
+          "OrderId": 10,
+          "Name": "Sector 10",
+          "StartNote": "Before you start this sector: Select town hall",
+          "EndNote": "After camp is destroyed, finish the adventure by following steps (keep order): USE transmutation reagents and wheat field fertilizer on laboratory and farm, CREATE Gate reinforcement kit and close RIGHT gate, BUILD headquarters and provision house",
+          "Camps": [
+            {
+              "Id": 23,
+              "SectorId": 10,
+              "OrderId": 1,
+              "Name": "CAMP 23",
+              "Note": null,
+              "Attacks": [
+                {
+                  "Id": 23,
+                  "CampId": 23,
+                  "AttackTypeId": 1,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 47,
+                      "AttackId": 23,
+                      "OrderId": 1,
+                      "GeneralName": "YOUNGER",
+                      "NumberOfUnits": "1 REC",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 48,
+                      "AttackId": 23,
+                      "OrderId": 2,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "195 MM",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                },
+                {
+                  "Id": 46,
+                  "CampId": 23,
+                  "AttackTypeId": 2,
+                  "Name": null,
+                  "Note": null,
+                  "Waves": [
+                    {
+                      "Id": 73,
+                      "AttackId": 46,
+                      "OrderId": 1,
+                      "GeneralName": "ANSLEM",
+                      "NumberOfUnits": "20 K",
+                      "Highlight": false,
+                      "Note": null
+                    },
+                    {
+                      "Id": 74,
+                      "AttackId": 46,
+                      "OrderId": 2,
+                      "GeneralName": "BORIS",
+                      "NumberOfUnits": "195 MM",
+                      "Highlight": false,
+                      "Note": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]

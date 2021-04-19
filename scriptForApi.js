@@ -1,6 +1,7 @@
 function callAdventure() {
-    const adventureUrl = "http://localhost/SettlersWebApi/Settlers/adventure";
-    const testingUrl = "https://statsapi.web.nhl.com/api/v1/conferences";
+    // const adventureUrl = "http://localhost/SettlersWebApi/Settlers/adventure";
+    const adventureUrl = "./json.json";
+    // const testingUrl = "https://statsapi.web.nhl.com/api/v1/conferences";
     fetch(adventureUrl)
         //, { 'mode': 'same-origin', 'headers':{'Access-Control-Allow-Origin': '*'}})
         .then(function(response){
@@ -10,14 +11,9 @@ function callAdventure() {
             }
             response.json()
             .then(function(data){
-                // buildAdventureTable(data);
-                // createSector(data);
-                // loadImgs();
                 createAdventureDetailTable(data);
                 createAttacks(data);
                 return data;
-                // createAttacks(data,1);
-                // createAttacks(data,2);
             })
         }).catch(function(error){
             console.log("catch: ", error);
@@ -93,7 +89,6 @@ function createAdventureDetailTable(dataJson) {
         let tabCell = tr.insertCell(-1);
         tabCell.innerHTML = dataJson[0][listOfThSecondary[a]];
     }
-
     newTable.classList.add("adventure-table");
     divAdventure.appendChild(newTable);
 }
