@@ -1,6 +1,6 @@
 function callAdventure() {
-    // const adventureUrl = "http://localhost/SettlersWebApi/Settlers/adventure";
-    const adventureUrl = "jsonApi.json";
+    const adventureUrl = "http://localhost/SettlersWebApi/Settlers/adventure";
+    // const adventureUrl = "jsonApi.json";
     // const testingUrl = "https://statsapi.web.nhl.com/api/v1/conferences";
     fetch(adventureUrl)
         //, { 'mode': 'same-origin', 'headers':{'Access-Control-Allow-Origin': '*'}})
@@ -279,7 +279,7 @@ function loadImgs(sectorName) {
     const imgDiv = document.createElement("div");
     imgDiv.classList.add(sectorName + "-imgs");
     imgDiv.classList.add("imgs");
-    imgDiv.classList.add("grid");
+    // imgDiv.classList.add("grid");
     let img1 = document.createElement("img");
     let img2 = document.createElement("img");
     img1.src = "./images/" + sectorName +"-1.png";
@@ -348,7 +348,7 @@ function createSectorHeader(sectorClassName, sectorName) {
             }
             let gridSectorImgs = document.getElementsByClassName(sectorClassName + "-imgs");
             for (const img of gridSectorImgs) {
-                img.style.display = "grid";
+                img.style.display = "flex";
             }
         }
     });
@@ -356,8 +356,8 @@ function createSectorHeader(sectorClassName, sectorName) {
     sectorH3.innerHTML = sectorName;
     sectorH3.classList.add("text-center");
     sectorH3.classList.add("l");
-    sectorHeaderDiv.appendChild(sectorH3);
     sectorHeaderDiv.appendChild(checkboxDiv);
+    sectorHeaderDiv.appendChild(sectorH3);
     return sectorHeaderDiv;
 }
 
