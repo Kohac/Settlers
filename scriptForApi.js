@@ -1,6 +1,6 @@
 function callAdventure() {
-    const adventureUrl = "http://localhost/SettlersWebApi/Settlers/adventure";
-    // const adventureUrl = "jsonApi.json";
+    // const adventureUrl = "http://localhost/SettlersWebApi/Settlers/adventure";
+    const adventureUrl = "jsonApi.json";
     // const testingUrl = "https://statsapi.web.nhl.com/api/v1/conferences";
     fetch(adventureUrl)
         //, { 'mode': 'same-origin', 'headers':{'Access-Control-Allow-Origin': '*'}})
