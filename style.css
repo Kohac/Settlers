@@ -42,7 +42,7 @@
     color: #fff;
     background-color: #438945;
     padding: 5px 8px;
-    width: 90%;
+    width: 98%;
     margin: auto;
     /* margin-left: 40px;
     margin-right: 40px; */
@@ -63,10 +63,13 @@
 /* utilities */
 /* Header */
 .header{
+    position: sticky;
+    top: 0;
     background-color: var(--primary-bg-color);
     color: var(--secondary-bg-color);
     padding: 0 45px;
     margin-bottom: 20px;
+    z-index: 1;
 }
 .header .flex{
     min-height: 100px;
@@ -143,13 +146,13 @@ body{
 }
 .sector-table-container{
     background-color: #28559A;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
 }
 .sector-table{
     border-collapse: collapse;
     margin: auto;
     table-layout: fixed;
-    width: 90%;
+    width: 98%;
     background-color: #fff;
 }
 .sector-table tr:not(:first-child) th{
@@ -182,8 +185,13 @@ body{
     cursor: pointer;
 }
 .sector-header{
-    padding: 0px 55px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 1%;
     color: #fff;
+}
+.sector-header h3{
+    margin-right: 45%;
 }
 .sector-header input[type="checkbox"]{
     background-color: red;
@@ -204,12 +212,14 @@ body{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     background-color: rgba(0, 0, 0, 0.85);
+    z-index: 1;
 }
 .modal-content{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    cursor: pointer;
 }
 .close{
     position: absolute;
@@ -225,14 +235,14 @@ body{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: baseline;
 }
 .checkbox-section input[type="checkbox"]{
     appearance: none;
     width: 1.5em;
     height: 1.5em;
     background-color: #c4c4c4;
-    margin-left: 10px;
+    /* padding-left: 10px; */
     cursor: pointer;
     border-radius: 5px;
     outline: none;
@@ -241,7 +251,8 @@ body{
     background-color: #aca9a9;
 }
 .checkbox-section label{
-    margin: 0 10px;
+    /* margin: 0 10px; */
+    padding-left: 10px;
     cursor: pointer;
 }
 .icon::before {

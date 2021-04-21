@@ -22,6 +22,10 @@ function callAdventure() {
 
 window.onload = function loader() {
     let data = callAdventure();
+    const modal = document.getElementById("modal");
+    modal.addEventListener('click', () => {
+        modal.style.display = "none";
+    })
 }
 // function createAdventureDetailTable(dataJson) {
 //     console.log(dataJson);
@@ -56,6 +60,7 @@ window.onload = function loader() {
 //     divAdventure.appendChild(newTable);
 // }
 function createAdventureDetailTable(dataJson) {
+    const pageTitle = document.getElementById("page-title").innerHTML = dataJson[0].Name;
     const divAdventure = document.getElementById("adventure-detail");
     let listOfTh = [];
     listOfTh.push("General");
@@ -64,11 +69,11 @@ function createAdventureDetailTable(dataJson) {
     listOfTh.push("Note");
 
     let listOfThSecondary = [];
-    listOfThSecondary.push("AdventureTypeId");
-    listOfThSecondary.push("AdventureThemeId");
+    listOfThSecondary.push("Type");
+    listOfThSecondary.push("Theme");
     listOfThSecondary.push("Difficulty");
     listOfThSecondary.push("Player");
-    listOfThSecondary.push("Time");
+    listOfThSecondary.push("FormatedTime");
 
     const newTable = document.getElementById("adventure-table");
     
@@ -84,7 +89,7 @@ function createAdventureDetailTable(dataJson) {
     let tr = newTable.insertRow(-1);
     for (let a = 0; a < listOfThSecondary.length; a++) {
         let th = document.createElement("th");
-        th.innerHTML = listOfThSecondary[a];
+        th.innerHTML = listOfThSecondary[a] === "FormatedTime" ? "Time" : listOfThSecondary[a];
         tr.appendChild(th);
         let tabCell = tr.insertCell(-1);
         tabCell.innerHTML = dataJson[0][listOfThSecondary[a]];
@@ -93,53 +98,53 @@ function createAdventureDetailTable(dataJson) {
     divAdventure.appendChild(newTable);
 }
 
-function createSector(dataJson) {
-    const divSectors = document.getElementById("sectors");
+// function createSector(dataJson) {
+//     const divSectors = document.getElementById("sectors");
 
-    for (let i = 0; i < dataJson[0].Sectors.length; i++) {
-        let newDiv = document.createElement("div");
-        newDiv.classList.add("sector-" + dataJson[0].Sectors[i]["Id"]);
-        let newTitle = document.createElement("h3");
-        newTitle.innerHTML = dataJson[0].Sectors[i]["Name"];
-        newTitle.classList.add("sector-title");
-        newTitle.classList.add("text-center");
-        let startNote = document.createElement("p");
-        startNote.innerHTML = dataJson[0].Sectors[i]["StartNote"]
-        startNote.classList.add("note");
-        let endNote = document.createElement("p");
-        endNote.innerHTML = dataJson[0].Sectors[i]["EndNote"]
-        endNote.classList.add("note");
-        newDiv.appendChild(newTitle);
-        newDiv.appendChild(startNote);
-        newDiv.appendChild(endNote);
-        divSectors.appendChild(newDiv);
-    }
-}
+//     for (let i = 0; i < dataJson[0].Sectors.length; i++) {
+//         let newDiv = document.createElement("div");
+//         newDiv.classList.add("sector-" + dataJson[0].Sectors[i]["Id"]);
+//         let newTitle = document.createElement("h3");
+//         newTitle.innerHTML = dataJson[0].Sectors[i]["Name"];
+//         newTitle.classList.add("sector-title");
+//         newTitle.classList.add("text-center");
+//         let startNote = document.createElement("p");
+//         startNote.innerHTML = dataJson[0].Sectors[i]["StartNote"]
+//         startNote.classList.add("note");
+//         let endNote = document.createElement("p");
+//         endNote.innerHTML = dataJson[0].Sectors[i]["EndNote"]
+//         endNote.classList.add("note");
+//         newDiv.appendChild(newTitle);
+//         newDiv.appendChild(startNote);
+//         newDiv.appendChild(endNote);
+//         divSectors.appendChild(newDiv);
+//     }
+// }
 
-function createCamps(dataJson) {
-    const newDiv = document.getElementById("camps");
-    const newTable = document.createElement("table");
-    let tr = newTable.insertRow(-1);
-    let arrayTh = [];
-    arrayTh.push("Id")
-    arrayTh.push("Name")
-    arrayTh.push("OrderId")
+// function createCamps(dataJson) {
+//     const newDiv = document.getElementById("camps");
+//     const newTable = document.createElement("table");
+//     let tr = newTable.insertRow(-1);
+//     let arrayTh = [];
+//     arrayTh.push("Id")
+//     arrayTh.push("Name")
+//     arrayTh.push("OrderId")
 
-    for (let i = 0; i < arrayTh.length; i++) {
-        let th = document.createElement("th");
-        th.innerHTML = arrayTh[i];
-        tr.appendChild(th);
-    }
+//     for (let i = 0; i < arrayTh.length; i++) {
+//         let th = document.createElement("th");
+//         th.innerHTML = arrayTh[i];
+//         tr.appendChild(th);
+//     }
 
-    for (let a = 0; a < dataJson[0].Sectors[0].Camps.length; a++) {
-        tr = newTable.insertRow(-1);
-        for (let b = 0; b < arrayTh.length; b++) {
-            let tableCell = tr.insertCell(-1);
-            tableCell.innerHTML = dataJson[0].Sectors[0].Camps[a][arrayTh[b]];
-        }
-    }
-    newDiv.appendChild(newTable);
-}
+//     for (let a = 0; a < dataJson[0].Sectors[0].Camps.length; a++) {
+//         tr = newTable.insertRow(-1);
+//         for (let b = 0; b < arrayTh.length; b++) {
+//             let tableCell = tr.insertCell(-1);
+//             tableCell.innerHTML = dataJson[0].Sectors[0].Camps[a][arrayTh[b]];
+//         }
+//     }
+//     newDiv.appendChild(newTable);
+// }
 
 // funkcni reseni, ktere vraci vsechny udaje k z utoku v jsonu
 // function createAttacks(dataJson) {
@@ -213,7 +218,7 @@ function createAttacks(dataJson) {
             for (let i = 0; i < camp.Attacks.length; i++) {
                 for (let w = 0; w < camp.Attacks[i].Waves.length; w++) {
                     campWaves.push(Object.assign(camp.Attacks[i].Waves[w],{CampAttackId: i}));
-                    listOfAttacks.push(camp.Attacks[i].AttackTypeId);
+                    listOfAttacks.push(camp.Attacks[i].Type);
                 }
             }
             let campWavesMaxOrderId = getMaxOrderId(campWaves);
@@ -310,7 +315,7 @@ function getMaxOrderId(jsonArray) {
 }
 function createSectorHeader(sectorClassName, sectorName) {
     let sectorHeaderDiv = document.createElement("div");
-    sectorHeaderDiv.classList.add("flex");
+    // sectorHeaderDiv.classList.add("flex-sector-head");
     sectorHeaderDiv.classList.add("sector-header");
     let checkboxDiv = document.createElement("div");
     checkboxDiv.classList.add("checkbox-section");
@@ -325,8 +330,8 @@ function createSectorHeader(sectorClassName, sectorName) {
     checkbox.type = "checkbox";
     checkbox.id = sectorClassName;
     checkbox.value = sectorClassName;
-    checkboxDiv.appendChild(checkboxLabel);
     checkboxDiv.appendChild(checkbox);
+    checkboxDiv.appendChild(checkboxLabel);
     checkboxDiv.appendChild(checkboxIcon);
     checkbox.addEventListener('change',() => {
         if (checkbox.checked) {
@@ -468,5 +473,5 @@ function displayModal(el, elId) {
 }
 function closeModal(elId) {
     const modal = document.getElementById(elId);
-    modal.style.display = "none"
+    modal.style.display = "none";
 }
